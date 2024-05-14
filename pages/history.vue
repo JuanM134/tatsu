@@ -529,7 +529,7 @@ export default {
     }
 
 .background {
-    background-image: url('assets/images/v2/dragonFinal.png');
+    background-image: url('assets/images/v2/dragon.png');
     background-size: 100%;
     
     background-position-y: 90%;
