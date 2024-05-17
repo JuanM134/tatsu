@@ -14,7 +14,7 @@
 
 
             <video autoplay loop muted id="myVideo2"  style="z-index: 3;" >
-                <source src="@/assets/videos/fireWithSound.mp4"  type="video/mp4" > 
+                <source src="@/assets/videos/fireWithSound.mp4"  type="video/h264" > 
                 Your browser does not support the video tag.
             </video>
 
