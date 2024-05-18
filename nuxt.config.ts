@@ -22,4 +22,12 @@ export default defineNuxtConfig({
     '@fortawesome/fontawesome-svg-core/styles.css',
     '@/assets/main.css'
   ]
+  hooks: {
+    'vite:extendConfig'(config, {isClient}) {
+      if (process.env.NODE_ENV !== 'development' && isClient) {
+        config.build.rollupOptions.output.chunkFileNames = '[name]-[hash].js'
+        config.build.rollupOptions.output.entryFileNames = '[name]-[hash].js'
+      }
+    }
+  }
 })
